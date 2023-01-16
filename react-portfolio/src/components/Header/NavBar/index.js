@@ -16,7 +16,7 @@ function NavBar(props) {
     return (
         <nav className="navbar">
             <div className="navbar-brand" id="logo">
-                <h1 className="title">Gris Carnitas</h1>
+                <h1 className="title">Griz Carnitas</h1>
             </div>
             <ul className="navbar-menu">
             {pages.map((Page) => (

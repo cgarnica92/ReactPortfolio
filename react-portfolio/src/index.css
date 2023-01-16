@@ -4,7 +4,12 @@ body {
 }
 
 section {
-  min-height: 70vh
+  min-height: 70vh;
+}
+
+#aboutMain {
+  min-height: 65vh;
+  background-color: aliceblue;
 }
 
 #logo {
@@ -13,6 +18,13 @@ section {
   max-width: 250px;
   max-height: 150px;
   border: 1px solid black;
+}
+
+#mainContainer {
+  min-height: 65vh;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-width: 100vw;
 }
 
 code {

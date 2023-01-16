@@ -2,7 +2,7 @@ import React from "react";
 
 const PageContent = (props) => {
     return(
-        <div className="container" style={{backgroundColor: "white", paddingTop: 0}}>
+        <div className="container" id="mainContainer" style={{backgroundColor: "black"}}>
             {props.children}
         </div>
     );

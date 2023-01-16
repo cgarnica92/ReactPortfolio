@@ -24,7 +24,7 @@ function Page({ currentPage }) {
 
     return(
         <section>
-            <h2 className="hero title is-white" style={{paddingLeft: 25, paddingTop: 10, paddingBottom: 10, borderStyle: "solid", borderWidth: 5, borderRight: 0, borderLeft: 0,}}>{capitalizeFirstLetter(currentPage.name)}</h2>
+            <h2 className="hero title is-white" style={{paddingLeft: 25, paddingTop: 10, paddingBottom: 15, marginBottom:0,}}>{capitalizeFirstLetter(currentPage.name)}</h2>
             <PageContent>{renderPage()}</PageContent>
         </section>
     );
