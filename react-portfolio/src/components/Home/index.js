@@ -1,8 +1,8 @@
 import React from "react";
 
-const Home = () => {
+function Home () {
     <div>
-        
+        <h1>This is the About Section</h1>
     </div>
 }
 

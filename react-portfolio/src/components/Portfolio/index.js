@@ -1,9 +1,9 @@
 import React from "react";
 
-const Resume = () => {
+function Portfolio () {
     <div>
         
     </div>
 }
 
-export default Resume; 
+export default Portfolio;

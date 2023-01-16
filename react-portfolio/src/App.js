@@ -1,36 +1,46 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import './App.css';
+import 'bulma/css/bulma.min.css';
 
-import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import Page from "./components/Page";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import NavBar from './components/Header/NavBar';
 
 function App() {
+
+  const [pages] = useState([
+    {
+      name: "about me"
+    },
+    {
+      name: "portfolio"
+    },
+    {
+      name: "contact"
+    },
+    {
+      name: "resume"
+    },
+  ]);
+
+  const [ currentPage, setCurrentPage ] = useState(pages[0]);
+
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route 
-            path="/"
-            element={<Home />}
-          />
-          <Route 
-            path="/portfolio"
-            element={<Portfolio />}
-          />
-          <Route 
-            path="resume"
-            element={<Resume />}
-          />
-         <Route 
-            path="contact"
-            element={<Contact />}
-          />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <Header>
+        <NavBar
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage} 
+        ></NavBar>
+        {console.log("Current:" + currentPage + " All: " + pages)}
+      </Header>
+      <main>
+        <Page currentPage={currentPage}></Page> 
+      </main>
+      <Footer />
+    </div>
   );
 }
 
