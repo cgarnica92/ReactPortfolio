@@ -4,10 +4,6 @@ body {
   overflow: hidden;
 }
 
-section {
-  min-height: 70vh;
-}
-
 #MD {
   min-height: 45vh
 }
