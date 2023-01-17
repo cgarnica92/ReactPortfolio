@@ -1,13 +1,18 @@
 body {
   min-height: 100vh;
   background-color: rgb(11, 0, 43);
+  overflow: hidden;
 }
 
 section {
   min-height: 70vh;
 }
 
-#aboutMain {
+#MD {
+  min-height: 45vh
+}
+
+.aboutMain {
   min-height: 65vh;
   background-color: aliceblue;
 }

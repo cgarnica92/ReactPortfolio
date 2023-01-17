@@ -1,9 +1,11 @@
 import React from "react";
 
 function Contact () {
-    <div>
-        
-    </div>
+    return(
+        <div className="columns aboutMain">
+            
+        </div>
+    );
 }
 
 export default Contact;

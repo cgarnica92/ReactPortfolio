@@ -3,7 +3,7 @@ import React from "react";
 function Home () {
     
     return(
-    <div className="columns" id="aboutMain">
+    <div className="columns aboutMain">
         <div className="column is-one-fifth card">
             <div className="card-image">
                 <figure className="image">
